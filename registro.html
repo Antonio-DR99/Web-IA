@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+20&family=Metamorphous&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>IA Beyond Limits</title>
+</head>
+<body>
+    <header> 
+        <div class="contenedor-titulo">
+            <img src="img/incono.png" alt="Logo">
+            <h1>IA Beyond Limits</h1>
+        </div>
+        <div class="contenedor-nav">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="agenda.html">Agenda</a></li>
+                    <li><a href="ponentes.html">Ponentes</a></li>
+                    <li><a href="patrocinadores.html">Patrocinadores</a></li>
+                    <li><a href="talleres.html">Talleres</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="contenedor-formulario">
+        <form>
+            <h3>REGISTRO</h3>
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Email">
+            <select id="opcion" onchange="mostrarArea();">
+                <option selected>Asistente</option>
+                <option>Ponente</option>
+            </select>
+                    
+            <div id="textarea" style="display: none;">
+                <textarea  placeholder="Escribe una breve biografia"></textarea>
+            </div>
+            <div class="contenedor-eventos">
+                <h2>SELECCIÓN EVENTOS:</h2>
+                <ul>
+                    <li>
+                        <input type="checkbox">
+                        El futuro de la IA: Perspectivas y tendencias
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        IA Generativa: Aplicaciones en la creación de contenido
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        Ética en la Inteligencia Artificial: Desafíos y soluciones
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        La Inteligencia Artificial en la Salud: Innovaciones y avances
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        IA en Finanzas: Revolucionando el sector
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        Panel de discusión: IA y sostenibilidad
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        IA en el horizonte 2030: Oportunidades y retos
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        Machine Learning: Fundamentos y aplicaciones
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        Redes Neuronales y su impacto en la biotecnología
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="contenedor-eventos">
+                <h2>SELECCIÓN TALLERES:</h2>
+                <ul>
+                    <li>
+                        <input type="checkbox" class="checkbox">
+                        Introducción al Machine Learning: Conceptos y Aplicaciones
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        Construcción de un Chatbot Inteligente
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        Visión por Computadora: Reconocimiento de Imágenes con IA
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        Optimización de Modelos de IA: De la teoría a la práctica
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        Desarrollo de Algoritmos de IA para el Análisis de Datos
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        IA Generativa: Creación de Contenido Automático
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        Implementación de Redes Neuronales Profundas en Python
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        Taller de IA en la Salud: Diagnóstico Predictivo
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        Automatización de Tareas con IA: Herramientas y Estrategias
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        Técnicas Avanzadas en Procesamiento de Lenguaje Natural (NLP)
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="contenedor-comida">
+                <h2>Selección de comida:</h2>
+                <ul>
+                    <li>
+                        <input type="checkbox">
+                        Cualquiera
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        Flexitariano
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        Vegano
+                    </li>
+                </ul>
+            </div>
+            <div class="contenedor-boton">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+
+    
+
+
+    <script type="text/javascript">
+        function mostrarArea(){
+            var seleccion= document.getElementById('opcion').value; 
+            var textarea= document.getElementById('textarea'); 
+
+            if(seleccion!==""){
+                textarea.style.display="block";
+            }else{
+                textarea.style.display="none";
+            }
+        }
+
+    </script>
+</body>
+<footer>
+    <P>Email: BeyondLimits@congresodeia.com</P>
+    <p>&copy; 2024 Congreso de IA Beyond Limits . Todos los derechos reservados.</p>
+</footer>
+</html>
